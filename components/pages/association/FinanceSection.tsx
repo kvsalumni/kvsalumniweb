@@ -105,7 +105,7 @@ export default function FinanceSection() {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="year" />
                   <YAxis />
-                  <Tooltip />
+                  <Tooltip contentStyle={{color: "black"}} itemStyle={{color: "black"}} />
                   <Bar dataKey="amount" fill="hsl(var(--primary))" />
                 </BarChart>
               </ResponsiveContainer>
