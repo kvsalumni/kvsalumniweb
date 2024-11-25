@@ -7,12 +7,6 @@ import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSect
 import { CTASection } from "@/components/pages/landing/CTASection";
 import { motion } from "framer-motion";
 
-const fadeInUp = {
-	initial: { opacity: 0, y: 20 },
-	animate: { opacity: 1, y: 0 },
-	transition: { duration: 0.5 },
-};
-
 export default function Home() {
 	return (
 		<motion.main
