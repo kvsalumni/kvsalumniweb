@@ -14,48 +14,7 @@ import {
   TabsList, 
   TabsTrigger 
 } from "@/components/ui/tabs";
-
-const advisoryCommittee = [
-  {
-    name: "Dr. [Name]",
-    role: "Chief Advisor",
-    image: "/assets/images/committee/advisor-1.jpg",
-    description: "Renowned educationist with extensive experience in academic leadership."
-  },
-  {
-    name: "Mr. [Name]",
-    role: "Senior Advisor",
-    image: "/assets/images/committee/advisor-2.jpg",
-    description: "Veteran administrator with deep insights into educational policy."
-  }
-];
-
-const alumniAssociationTeam = [
-  {
-    name: "[Name]",
-    role: "President",
-    image: "/assets/images/committee/president.jpg",
-    description: "Leads the strategic vision and initiatives of the alumni association."
-  },
-  {
-    name: "[Name]",
-    role: "Vice President",
-    image: "/assets/images/committee/vice-president.jpg",
-    description: "Supports overall management and coordinates key association activities."
-  },
-  {
-    name: "[Name]",
-    role: "Secretary",
-    image: "/assets/images/committee/secretary.jpg",
-    description: "Manages administrative operations and communication."
-  },
-  {
-    name: "[Name]",
-    role: "Treasurer",
-    image: "/assets/images/committee/treasurer.jpg",
-    description: "Oversees financial planning and resource management."
-  }
-];
+import { managementCommitteeData } from "./landing-database/managementCommitteeData";
 
 export function ManagementCommitteeSection() {
   return (
@@ -77,8 +36,8 @@ export function ManagementCommitteeSection() {
           </TabsList>
           
           <TabsContent value="advisory-committee">
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {advisoryCommittee.map((member, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {managementCommitteeData.advisoryCommittee.map((member, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader className="pb-0">
                     <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-4">
@@ -103,7 +62,7 @@ export function ManagementCommitteeSection() {
           
           <TabsContent value="alumni-team">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {alumniAssociationTeam.map((member, index) => (
+              {managementCommitteeData.alumniAssociationTeam.map((member, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader className="pb-0">
                     <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden mb-4">
