@@ -14,7 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import Autoplay from "embla-carousel-autoplay";
-import { carouselImages } from "./carouselData";
+import { carouselImages } from "./landing-database/carouselData";
 
 export function HeroSection() {
   const plugin = React.useRef(
