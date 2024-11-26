@@ -72,10 +72,4 @@ export const carouselImages: CarouselImage[] = [
     title: "",
     description: "",
   },
-  {
-    src: "/assets/images/heroCarouselImg/IMG-HERO-011.jpeg",
-    alt: "...",
-    title: "",
-    description: "",
-  },
 ];
