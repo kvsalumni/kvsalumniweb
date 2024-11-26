@@ -3,6 +3,7 @@
 import { HeroSection } from "@/components/pages/landing/HeroSection";
 import { PresidentMessageSection } from "@/components/pages/landing/PresidentMessageSection";
 import { ManagementCommitteeSection } from "@/components/pages/landing/ManagementCommiteeSection";
+import BatchDetailsSection from "@/components/pages/landing/BatchDetailsSection";
 import { StatsSection } from "@/components/pages/landing/StatsSection";
 import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSection";
 import { CTASection } from "@/components/pages/landing/CTASection";
@@ -20,6 +21,7 @@ export default function Home() {
 			<HeroSection />
 			<PresidentMessageSection />
 			<ManagementCommitteeSection />
+			<BatchDetailsSection />
 			<StatsSection />
 			<TestimonialsSection />
 			<CTASection />
