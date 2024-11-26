@@ -14,27 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import Autoplay from "embla-carousel-autoplay";
-
-const carouselImages = [
-  {
-    src: "/assets/images/KVS-ALumni-Meet.jpeg",
-    alt: "KVS Alumni Meet",
-    title: "Building Connections",
-    description: "Join our vibrant community of KV alumni worldwide",
-  },
-  {
-    src: "/assets/images/alumni-2.jpg",
-    alt: "Alumni Gathering",
-    title: "Creating Memories",
-    description: "Be part of memorable reunions and celebrations",
-  },
-  {
-    src: "/assets/images/alumni-3.jpg",
-    alt: "Professional Network",
-    title: "Growing Together",
-    description: "Expand your professional network with fellow alumni",
-  },
-];
+import { carouselImages } from "./carouselData";
 
 export function HeroSection() {
   const plugin = React.useRef(
