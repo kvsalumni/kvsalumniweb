@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { presidentMessageData } from "./landing-database/presidentMessageData";
 
 export function PresidentMessageSection() {
   return (
@@ -16,8 +17,8 @@ export function PresidentMessageSection() {
           className="relative w-full aspect-[3/4] max-w-md mx-auto lg:mx-0 rounded-xl overflow-hidden shadow-lg"
         >
           <Image
-            src="/assets/images/president/president-portrait.jpg"
-            alt="KVS Alumni Association President"
+            src={presidentMessageData.image}
+            alt={`${presidentMessageData.name} Portrait`}
             fill
             className="object-cover"
             priority
@@ -37,9 +38,7 @@ export function PresidentMessageSection() {
           </h2>
           
           <div className="prose dark:prose-invert max-w-prose space-y-4">
-            <p>
-              Dear KVS Alumni Community,
-            </p>
+            <p>Dear KVS Alumni Community,</p>
             <p>
               As the President of the KVS Alumni Association, I am honored to lead an organization that represents the vibrant and diverse community of Kendriya Vidyalaya alumni. Our association is more than just a network; it's a platform for connection, growth, and giving back.
             </p>
@@ -52,7 +51,7 @@ export function PresidentMessageSection() {
             <p className="font-semibold">
               Warm regards,
               <br />
-              [President's Name]
+              {presidentMessageData.name}
               <br />
               KVS Alumni Association
             </p>
