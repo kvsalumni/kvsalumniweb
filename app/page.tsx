@@ -1,7 +1,8 @@
 "use client";
 
 import { HeroSection } from "@/components/pages/landing/HeroSection";
-import { FeaturesSection } from "@/components/pages/landing/FeaturesSection";
+import { PresidentMessageSection } from "@/components/pages/landing/PresidentMessageSection";
+import { ManagementCommitteeSection } from "@/components/pages/landing/ManagementCommiteeSection";
 import { StatsSection } from "@/components/pages/landing/StatsSection";
 import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSection";
 import { CTASection } from "@/components/pages/landing/CTASection";
@@ -17,7 +18,8 @@ export default function Home() {
 				animate: { opacity: 1, transition: { staggerChildren: 0.2 } },
 			}}>
 			<HeroSection />
-			<FeaturesSection />
+			<PresidentMessageSection />
+			<ManagementCommitteeSection />
 			<StatsSection />
 			<TestimonialsSection />
 			<CTASection />
