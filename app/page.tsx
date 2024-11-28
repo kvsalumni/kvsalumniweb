@@ -10,6 +10,7 @@ import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSect
 import NoticesSection from "@/components/pages/landing/NoticesSection";
 import MediaSection from "@/components/pages/landing/MediaSection";
 import { CTASection } from "@/components/pages/landing/CTASection";
+import RegistrationSection from "@/components/pages/landing/RegistrationSection";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
 			<TestimonialsSection />
 			<NoticesSection />
 			<MediaSection />
+			<RegistrationSection />
 			<CTASection />
 		</motion.main>
 	);
