@@ -48,6 +48,7 @@
     "cmdk": "1.0.4",
     "cobe": "^0.6.3",
     "date-fns": "^3.0.0",
+    "embla-carousel": "^8.5.1",
     "embla-carousel-autoplay": "^8.5.1",
     "embla-carousel-react": "^8.3.1",
     "framer-motion": "^11.11.17",
