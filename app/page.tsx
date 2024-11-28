@@ -7,6 +7,7 @@ import BatchDetailsSection from "@/components/pages/landing/BatchDetailsSection"
 import FinanceSection from "@/components/pages/landing/FinanceSection";
 import MembershipSection from "@/components/pages/landing/MembershipSection";
 import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSection";
+import NoticesSection from "@/components/pages/landing/NoticesSection";
 import { CTASection } from "@/components/pages/landing/CTASection";
 import { motion } from "framer-motion";
 
@@ -26,6 +27,7 @@ export default function Home() {
 			<FinanceSection />
 			<MembershipSection />
 			<TestimonialsSection />
+			<NoticesSection />
 			<CTASection />
 		</motion.main>
 	);
