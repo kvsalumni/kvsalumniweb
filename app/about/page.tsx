@@ -5,6 +5,9 @@ import SchoolHistory from "@/components/pages/about/SchoolHistory";
 import SchoolVision from "@/components/pages/about/SchoolVision";
 import SchoolAchievements from "@/components/pages/about/SchoolAchievements";
 import SocialMediaLinks from "@/components/pages/about/SocialMediaLinks";
+import { PresidentMessageSection } from "@/components/pages/landing/PresidentMessageSection";
+import { ManagementCommitteeSection } from "@/components/pages/landing/ManagementCommiteeSection";
+import { TestimonialsSection } from "@/components/pages/landing/TestimonialsSection";
 import { motion } from "framer-motion";
 
 const pageVariants = {
@@ -49,6 +52,17 @@ export default function AboutPage() {
       </motion.div>
       <motion.div variants={sectionVariants}>
         <SchoolAchievements />
+      </motion.div>
+      
+      {/* New Sections from Landing Page */}
+      <motion.div variants={sectionVariants}>
+        <PresidentMessageSection />
+      </motion.div>
+      <motion.div variants={sectionVariants}>
+        <ManagementCommitteeSection />
+      </motion.div>
+      <motion.div variants={sectionVariants}>
+        <TestimonialsSection />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <SocialMediaLinks />
